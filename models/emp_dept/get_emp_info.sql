@@ -8,4 +8,4 @@ employee_info as (
     from emp_source
     join {{source('emp_dept','department')}} using (dept_id)
 )
-select * from employee_info order by emp_id
+select * from employee_info order by employee_info.dept_id
