@@ -2,7 +2,13 @@ version: 2
 
 sources:
   - name: emp_dept
-    database: dev
+    # database: dev
+    database: |
+      {%- if  target.name == "dev" -%} dev
+      {%- elif target.name == "qa"  -%} qa
+      {%- elif target.name == "prod"  -%} prod
+      {%- else -%} invalid_database
+      {%- endif -%}
     schema: dbt_schema
     tables:
       - name: employee
