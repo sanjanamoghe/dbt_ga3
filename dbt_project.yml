@@ -4,7 +4,6 @@
 # name or the intended use of these models
 =======
 name: 'dbt_project'
->>>>>>> 4a0bc04b9a1c11d0f1872235f73fd170d90384a8
 version: '1.0.0'
 config-version: 2
 
