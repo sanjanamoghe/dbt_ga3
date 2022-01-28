@@ -3,7 +3,7 @@
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
 =======
-name: 'dbt_project'
+name: 'smezest_dbt'
 version: '1.0.0'
 config-version: 2
 
@@ -33,7 +33,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 # as tables. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
 models:
-  dbt_project:
+  smezest_dbt:
     # Applies to all files under models/
     emp_dept:
       materialized: table
