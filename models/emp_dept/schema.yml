@@ -13,3 +13,5 @@ sources:
     tables:
       - name: employee
       - name: department
+      - name: source_table
+      - name: target_table
